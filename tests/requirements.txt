@@ -1,3 +1,7 @@
 coverage==7.6.12
 pytest==7.4.2
 pytest-cov==4.1.0
+
+# numpy is a device dependency (picamera installs it; see requirements-raspi.txt) that
+# the dice grid reader uses. The desktop requirements don't include it, so tests do.
+numpy==1.26.4
